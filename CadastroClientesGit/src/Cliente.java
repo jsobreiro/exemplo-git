@@ -13,6 +13,11 @@ public class Cliente {
         this.email = email;
     }
 
+    @Override
+    public String toString() {
+        return "Nome=" + nome + ", telefone=" + telefone + ", email=" + email;
+    }
+
     public String getNome() {
         return nome;
     }
@@ -37,9 +42,10 @@ public class Cliente {
         this.email = email;
     }
 
-    @Override
-    public String toString() {
-        return "Nome=" + nome + ", telefone=" + telefone + ", email=" + email;
+    public String exibirDados() {
+        return "\nNome do cliente: " + nome +
+                "\nTelefone: " + telefone +
+                "\nE-mail: " + email;
     }
 
 }
